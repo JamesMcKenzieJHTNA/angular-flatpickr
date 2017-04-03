@@ -1,24 +1,27 @@
 {
-    "name": "angular-flatpickr",
-    "version": "2.0.0",
-    "homepage": "https://github.com/archsaber/angular-flatpickr",
-    "authors": [
-        "opavader <ashish@archsaber.com>"
-    ],
-    "description": "angular directive for flatpickr",
-    "main": "dist/ng-flatpickr.js",
-    "keywords": [
-        "date-picker",
-        "angular",
-        "flatpickr"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "node_modules",
-        "bower_components"
-    ],
-    "dependencies": {
-        "angular": "^1.3.0",
-        "flatpickr-calendar": "^2.0.0"
-    }
+  "name": "angular-flatpickr-in-timezone",
+  "version": "0.1.0",
+  "homepage": "https://github.com/JamesMcKenzieJHTNA/angular-flatpickr",
+  "authors": [
+    "James McKenzie <jmkenz@gmail.com>"
+  ],
+  "description": "angular directive for flatpickr that sets datetimes in any given timezone",
+  "main": "dist/ng-flatpickr-in-timezone.js",
+  "keywords": [
+    "date-picker",
+    "angular",
+    "flatpickr",
+    "timezone"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.3.0",
+    "flatpickr-calendar": "^2.0.0",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.12"
+  }
 }

@@ -1,13 +1,13 @@
 {
-  "name": "angular-flatpickr",
-  "version": "2.0.0",
-  "description": "angular directive for flatpickr",
+  "name": "angular-flatpickr-in-timezone",
+  "version": "0.1.0",
+  "description": "angular directive for flatpickr that sets datetimes in any given timezone",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/archsaber/angular-flatpickr"
+    "url": "https://github.com/JamesMcKenzieJHTNA/angular-flatpickr"
   },
-  "author": "opavader",
+  "author": "James McKenzie <jmkenz@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "del": "~1.1.1",

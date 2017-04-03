@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/archsaber/angular-flatpickr.svg?branch=master)](https://travis-ci.org/archsaber/angular-flatpickr)
-
-# Angular-flatpickr
+# angular-flatpickr-in-timezone
 
 An angular directive to use [flatpickr](https://github.com/chmln/flatpickr).
 Currently it has following capabilities
@@ -9,13 +7,13 @@ Currently it has following capabilities
 
 ## Example
 
-* install it with `bower install --save angular-flatpickr`
+* install it with `npm install --save angular-flatpickr-in-timezone` or `bower install --save angular-flatpickr-in-timezone`
 
-* Add the `ng-flatpickr` module in your app as
+* Add the `ng-flatpickr-in-timezone` module in your app as
 
 ```js
 var module = angular.module('atApp.somemodule', [
-    'angular-flatpickr' // <- important
+    'angular-flatpickr-in-timezone'
 ]);
 ```
 
@@ -36,7 +34,7 @@ $scope.datePostSetup = function(fpItem) {
 In your view set the element as per your scope variables defined above
 ``` html
 <div ng-repeat="date in dates">
-<input ng-flatpickr fp-opts="dateOpts" fp-on-setup="datePostSetup(fpItem)" ng-model="date.selectedDateObj" data-enabletime="true">
+<input ng-flatpickr-in-timezone fp-opts="dateOpts" fp-on-setup="datePostSetup(fpItem)" ng-model="date.selectedDateObj" data-enabletime="true">
 </div>
 ```
 
@@ -48,7 +46,7 @@ Note: This directive doesn't watch over the `fp-opts` values. For doing any chan
 
 angular-flatpickr module is under MIT license:
 
-> Copyright (C) 2016 ArchSaber.
+> Copyright (C) 2016 James McKenzie.
 >
 > Permission is hereby granted, free of charge, to any person
 > obtaining a copy of this software and associated documentation files
