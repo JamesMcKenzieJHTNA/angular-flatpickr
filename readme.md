@@ -21,8 +21,12 @@ var module = angular.module('atApp.somemodule', [
 
 ```js
 $scope.dateOpts = {
-    dateFormat: 'Y-m-d',
-    defaultDate: '2016-03-01 03:30:00 -0300'
+    dateFormat: 'Y-m-d\\TH:i:S', // e.g. '2017-03-23T06:05:00', '2017-03-23T14:25:00'
+    defaultDate: '2017-03-23T06:05:00',
+    altInput: true,
+    altFormat: 'M J, Y H:i',
+    enableTime: true,
+    timezone: 'US/Chicago'
 };
 
 $scope.datePostSetup = function(fpItem) {
@@ -34,7 +38,7 @@ $scope.datePostSetup = function(fpItem) {
 In your view set the element as per your scope variables defined above
 ``` html
 <div ng-repeat="date in dates">
-<input ng-flatpickr-in-timezone fp-opts="dateOpts" fp-on-setup="datePostSetup(fpItem)" ng-model="date.selectedDateObj" data-enabletime="true">
+<input ng-flatpickr-in-timezone fp-opts="dateOpts" fp-on-setup="datePostSetup(fpItem)" ng-model="date.selectedDateObj">
 </div>
 ```
 
@@ -46,8 +50,6 @@ Note: This directive doesn't watch over the `fp-opts` values. For doing any chan
 
 angular-flatpickr module is under MIT license:
 
-> Copyright (C) 2016 James McKenzie.
->
 > Permission is hereby granted, free of charge, to any person
 > obtaining a copy of this software and associated documentation files
 > (the "Software"), to deal in the Software without restriction,
