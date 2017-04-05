@@ -1,6 +1,6 @@
 {
   "name": "angular-flatpickr-in-timezone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "angular directive for flatpickr that sets datetimes in any given timezone",
   "main": "index.js",
   "repository": {
