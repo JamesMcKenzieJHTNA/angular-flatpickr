@@ -9,7 +9,7 @@ var stylish = require('jshint-stylish');
 var packageJson = require('./package.json');
 
 var distFolder = './dist/';
-var src = (['ng-flatpickr']).map(function (val) {
+var src = (['ng-flatpickr-in-timezone']).map(function (val) {
     return 'src/' + val + '.js';
 });
 
@@ -24,7 +24,7 @@ gulp.task('lint', function () {
 
 gulp.task('uglify', function () {
     gulp.src(src)
-      .pipe(concat('ng-flatpickr.min.js'))
+      .pipe(concat('ng-flatpickr-in-timezone.min.js'))
       .pipe(sourcemaps.init())
       .pipe(uglify())
       .pipe(sourcemaps.write('.'))
@@ -33,7 +33,7 @@ gulp.task('uglify', function () {
 
 gulp.task('concat', function () {
     gulp.src(src, { base: '.' })
-      .pipe(concat('ng-flatpickr.js'))
+      .pipe(concat('ng-flatpickr-in-timezone.js'))
       .pipe(gulp.dest(distFolder));
 });
 
