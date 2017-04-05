@@ -3,6 +3,7 @@
 An angular directive to use [flatpickr](https://github.com/chmln/flatpickr).
 Currently it has following capabilities
 * setting init options using `fp-opts` attribute
+* additional init option, 'timezone', to specify which timezone the date-time selected is in (otherwise assumed to be the user's computer timezone)
 * on setup callback using `fp-on-setup` attribute to get the created flatpickr object
 
 ## Example
@@ -38,7 +39,7 @@ $scope.datePostSetup = function(fpItem) {
 In your view set the element as per your scope variables defined above
 ``` html
 <div ng-repeat="date in dates">
-<input ng-flatpickr-in-timezone fp-opts="dateOpts" fp-on-setup="datePostSetup(fpItem)" ng-model="date.selectedDateObj">
+    <input ng-flatpickr-in-timezone fp-opts="dateOpts" fp-on-setup="datePostSetup(fpItem)" ng-model="dateTime">
 </div>
 ```
 
@@ -48,7 +49,7 @@ Note: This directive doesn't watch over the `fp-opts` values. For doing any chan
 
 ## License
 
-angular-flatpickr module is under MIT license:
+angular-flatpickr-in-timezone module is under MIT license:
 
 > Permission is hereby granted, free of charge, to any person
 > obtaining a copy of this software and associated documentation files
